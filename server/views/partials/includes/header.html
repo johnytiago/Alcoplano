@@ -1,0 +1,45 @@
+<nav role="navigation" class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+
+    <!-- Brand and toggle get grouped for better mobile display-->
+    <div class="navbar-header">
+      <button type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand"><img src="/images/logowhite.png" alt="ALCOPLANO"/></a>
+    </div>
+
+    <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/" class="navbar-flag-icon"><img src="/images/icons/pt-icon.png" alt="PT"/></a>
+        </li>
+        <li>
+          <a href="/en" class="navbar-flag-icon"><img src="/images/icons/uk-icon.png" alt="EN"/></a>
+        </li>
+        <li>
+          <a href="{{servicePrefix}}#services" class="page-scroll">{{wwd}}</a>
+        </li>
+        <li class="{{#active 'about'}}{{/active}}">
+          <a href="about">{{about}}</a>
+        </li>
+        <li class="{{#active 'contact'}}{{/active}}">
+          <a href="contact">{{contact}}</a>
+        </li>
+        <li class="dropdown {{#active 'portfolio'}}{{/active}}">
+          <a href="#" data-toggle="dropdown" class="dropdown-toggle">{{portfolio}}<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            {{#each portfolio_items}}
+            <li class="">
+              <a href='{{link}}'>{{name}}</a>
+            </li>
+            {{/each}}
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

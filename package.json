@@ -1,0 +1,24 @@
+{
+  "name": "www",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "browser-sync start --proxy 'http://localhost:8000' --files 'public/*' --files 'server/*'",
+    "watch": "nodemon -e '*'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.14.0",
+    "handlebars": "^4.0.5",
+    "hapi": "^15.0.3",
+    "hapi-named-routes": "^0.3.0",
+    "inert": "^4.0.2",
+    "lodash": "^4.16.4",
+    "nodemon": "^1.10.2",
+    "vision": "^4.1.0"
+  }
+}

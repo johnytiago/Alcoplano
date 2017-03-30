@@ -1,0 +1,81 @@
+// Carousel
+header#myCarousel.carousel.slide
+  // Indicators
+  ol.carousel-indicators
+    li.active(data-target='#myCarousel', data-slide-to='0')
+    li(data-target='#myCarousel', data-slide-to='1')
+    li(data-target='#myCarousel', data-slide-to='2')
+  // Wrapper for slides
+  .carousel-inner
+    .item.active
+      .fill(style='background-image: url("/images/carousel/placeholder4.jpg");')
+    .item
+      .fill(style='background-image: url("/images/carousel/placeholder5.jpg");')
+    .item
+      .fill(style='background-image: url("/images/carousel/placeholder6.jpg");')
+      //.carousel-caption
+        //h2 Caption 3
+  // Controls
+  a.left.carousel-control(href='#myCarousel', data-slide='prev')
+    span.icon-prev
+  a.right.carousel-control(href='#myCarousel', data-slide='next')
+    span.icon-next
+
+// Page Content
+.container
+  .row.wwd
+    each service in public.en._data.index.services
+      != partial("../partials/_wwd-service", service)
+  // /.row
+  // Portfolio Section
+  .row
+    .col-lg-12
+      h2.page-header Portfolio Heading
+    .col-md-4.col-sm-6
+      a(href='portfolio-item.html')
+        img.img-responsive.img-portfolio.img-hover(src='http://placehold.it/700x450', alt='')
+    .col-md-4.col-sm-6
+      a(href='portfolio-item.html')
+        img.img-responsive.img-portfolio.img-hover(src='http://placehold.it/700x450', alt='')
+    .col-md-4.col-sm-6
+      a(href='portfolio-item.html')
+        img.img-responsive.img-portfolio.img-hover(src='http://placehold.it/700x450', alt='')
+    .col-md-4.col-sm-6
+      a(href='portfolio-item.html')
+        img.img-responsive.img-portfolio.img-hover(src='http://placehold.it/700x450', alt='')
+    .col-md-4.col-sm-6
+      a(href='portfolio-item.html')
+        img.img-responsive.img-portfolio.img-hover(src='http://placehold.it/700x450', alt='')
+    .col-md-4.col-sm-6
+      a(href='portfolio-item.html')
+        img.img-responsive.img-portfolio.img-hover(src='http://placehold.it/700x450', alt='')
+  // /.row
+  // Features Section
+  .row
+    .col-lg-12
+      h2.page-header Modern Business Features
+    .col-md-6
+      p The Modern Business template by Start Bootstrap includes:
+      ul
+        li
+          strong Bootstrap v3.2.0
+        li jQuery v1.11.0
+        li Font Awesome v4.1.0
+        li Working PHP contact form with validation
+        li Unstyled page elements for easy customization
+        li 17 HTML pages
+      p
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.
+    .col-md-6
+      img.img-responsive(src='http://placehold.it/700x450', alt='')
+  // /.row
+  hr
+  // Call to Action Section
+  .well
+    .row
+      .col-md-8
+        p
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.
+      .col-md-4
+        a.btn.btn-lg.btn-default.btn-block(href='#') Call to Action
+  hr

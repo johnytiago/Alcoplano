@@ -1,0 +1,103 @@
+<!-- Page Content-->
+<!--.container
+//.col-lg-12
+  //h1.about-title
+    //|
+-->
+<div class="container-fluid about parallax">
+  <h1 class="about-caption">"{{{about.caption}}}"</h1>
+</div>
+
+<div class="container about">
+  
+  <div class="row">
+    <div class="col-lg-12">
+      <hr class="horizontal-line"/>
+    </div>
+  </div>
+
+  <span id="the_company" class="anchor"></span>
+  <div class="row the-company">
+    <div class="col-md-12">
+      <h2 class="sub-title">
+        {{about.story_title}}
+      </h2>
+    </div>
+    <div class="col-md-9 the-company">
+      <p class="description light-typo">
+        {{{about.story}}}
+      </p>
+    </div>
+    <div class="col-md-3 navbar">
+      <ul data-spy="affix" data-offset-top="345" data-offset-bottom="30" class="nav nav-stacked side-nav hidden-sm hidden-xs">
+        <li role="presentation">
+          <a href="#the_company" class="page-scroll">{{about.side_nav.company}}</a>
+        </li>
+        <li role="presentation">
+          <a href="#mission" class="page-scroll">{{about.side_nav.mission}}</a>
+        </li>
+        <li role="presentation">
+          <a href="#certification" class="page-scroll">{{about.side_nav.certification}}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <span id="mission" class="anchor"></span>
+  <div class="row">
+    <div class="col-lg-9">
+      <h2 class="page-header">
+        {{about.mission_title}}
+      </h2>
+      <p class="description light-typo">
+        {{{about.mission}}}
+      </p>
+    </div>
+  </div>
+
+  <div class="row"><span id="certification" class="anchor"></span>
+    <div class="col-lg-9">
+      <h2 class="page-header">
+        {{about.certification_title}}
+      </h2>
+      <p class="description light-typo">
+        {{{about.certification}}}
+      </p>
+    </div>
+  </div>
+
+  <!-- Team Members-->
+  <!--.row.stop-scroll
+  //.col-lg-12
+    //h2.page-header Our Team
+  //each i in Array(3)
+    //.col-md-4.text-center
+      //.thumbnail
+        //img.img-responsive(src='http://placehold.it/750x450', alt='')
+        //.caption
+          //h3
+            //| John Smith
+            //br
+            //small Job Title
+          //p
+            //| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.
+          //ul.list-inline
+            //li
+              //a(href='#')
+                //i.fa.fa-2x.fa-facebook-square
+            //li
+              //a(href='#')
+                //i.fa.fa-2x.fa-linkedin-square
+            //li
+              //a(href='#')
+                //i.fa.fa-2x.fa-twitter-square
+  -->
+  <!--// Our Customers-->
+  <!--.row
+  //.col-lg-12
+    //h2.page-header Our Customers
+  //each i in Array(6)
+    //.col-md-2.col-sm-4.col-xs-6
+      //img.img-responsive.customer-img(src='http://placehold.it/500x300', alt='')
+  -->
+</div>
